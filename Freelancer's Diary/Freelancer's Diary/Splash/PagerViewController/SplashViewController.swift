@@ -36,10 +36,11 @@ class SplashViewController: UIViewController {
         case 0:
             firstDot.backgroundColor = .white.withAlphaComponent(0.5)
             secondDot.backgroundColor = UIColor(named: "ButtonColor")
-            
+            nextButton.setTitle("Next", for: .normal)
         case 1:
             secondDot.backgroundColor = .white.withAlphaComponent(0.5)
             firstDot.backgroundColor = UIColor(named: "ButtonColor")
+            nextButton.setTitle("Start", for: .normal)
         default:
             break
         }
@@ -62,6 +63,12 @@ class SplashViewController: UIViewController {
     }
 
     @IBAction func clickedNext(_ sender: UIButton) {
+        if currentIndex == 0 {
+            setCurrentPage(index: 1)
+        } else {
+            let homeVC = UIStoryboard(name: "TabBar", bundle: .main).instantiateViewController(withIdentifier: "TabBarController")
+            homeVC.setAsRoot()
+        }
     }
     
 }
@@ -93,5 +100,12 @@ extension SplashViewController: UIPageViewControllerDataSource {
         } else {
             return self.pages[index + 1]
         }
+    }
+}
+
+extension UIViewController {
+    func setAsRoot() {
+        UIApplication.shared.windows.first?.rootViewController = self
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
 }

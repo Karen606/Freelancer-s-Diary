@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar(title: "Home", button: nil)
         setupTableView()
         bindViewModel()
         activeButton.isSelected = true

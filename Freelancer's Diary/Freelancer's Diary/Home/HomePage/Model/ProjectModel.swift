@@ -12,6 +12,10 @@ struct ProjectModel: Codable {
     var status: ProjectStatus
     var tasks: [TaskModel]
     var client: ClientModel
+    
+    func getTotalPrice() -> Int {
+        return tasks.reduce(0) { $0 + (Int($1.price) ?? 0) }
+    }
 }
 
 struct Project: Codable {

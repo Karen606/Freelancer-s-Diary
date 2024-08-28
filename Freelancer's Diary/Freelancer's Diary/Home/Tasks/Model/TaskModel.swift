@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct TaskModel: Codable {
+    var name: String
+    var price: String
+}

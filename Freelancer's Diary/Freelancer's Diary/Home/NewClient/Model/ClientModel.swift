@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct ClientModel: Codable {
+    var name: String = ""
+    var description: String = ""
+    var phoneNumber: String = ""
+    var email: String = ""
+    var isRegularCustomer: Bool?
+}

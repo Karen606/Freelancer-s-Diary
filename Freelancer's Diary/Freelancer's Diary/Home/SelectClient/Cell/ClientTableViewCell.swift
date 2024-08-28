@@ -9,15 +9,24 @@ import UIKit
 
 class ClientTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var clientImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    }
+    
+    func setupData(client: ClientModel) {
+        nameLabel.text = client.name
+        if let isRegularCustomer = client.isRegularCustomer {
+            clientImageView.image = isRegularCustomer ? UIImage(named: "RegularClient") : UIImage(named: "CustomClient")
+        }
     }
     
 }

@@ -1,20 +1,20 @@
 //
-//  HomeViewController.swift
+//  NavigationViewController.swift
 //  Freelancer's Diary
 //
-//  Created by Karen Khachatryan on 27.08.24.
+//  Created by Karen Khachatryan on 28.08.24.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class NavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation

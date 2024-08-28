@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,9 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewProjectViewController" customModule="Freelancer_s_Diary" customModuleProvider="target">
             <connections>
+                <outlet property="deadlineButton" destination="kIZ-ij-Mdm" id="M73-8x-UkN"/>
+                <outlet property="descriptionTextField" destination="8f7-oQ-PaE" id="1he-0q-Fzp"/>
                 <outlet property="easyButton" destination="L0n-np-ydN" id="M9t-Tl-8tH"/>
                 <outlet property="hardButton" destination="IX8-KA-sb6" id="l20-iN-69p"/>
                 <outlet property="mediumButton" destination="kY2-ov-ywM" id="L9j-gb-GJf"/>
+                <outlet property="nameTextField" destination="TD0-AX-Ji2" id="taC-Bk-ODG"/>
                 <outlet property="noButton" destination="tnl-qw-Wwe" id="fgP-Zc-WYH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yesButton" destination="KZq-r4-7SV" id="quA-Wb-crQ"/>
@@ -89,9 +93,16 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Deadline" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLf-YD-Lf9" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                                    <rect key="frame" x="34.666666666666657" y="344" width="324" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="Ctj-O6-Vb0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIZ-ij-Mdm">
                                     <rect key="frame" x="35" y="344" width="323" height="60"/>
-                                    <color key="backgroundColor" name="SelectionColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="ufq-AF-0q4"/>
                                     </constraints>
@@ -102,6 +113,9 @@
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="chooseDeadline:" destination="-1" eventType="touchUpInside" id="Y8O-QZ-kyi"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEv-Dd-OFW">
                                     <rect key="frame" x="38.000000000000007" y="443" width="64.666666666666686" height="24"/>
@@ -235,10 +249,12 @@
                                 <constraint firstAttribute="bottom" secondItem="I4e-Is-O24" secondAttribute="bottom" constant="24" id="FAZ-mc-WEj"/>
                                 <constraint firstItem="703-cC-pYB" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="35" id="Fpp-vc-yce"/>
                                 <constraint firstItem="TD0-AX-Ji2" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="35" id="GV2-o0-TCf"/>
+                                <constraint firstItem="HLf-YD-Lf9" firstAttribute="centerX" secondItem="kIZ-ij-Mdm" secondAttribute="centerX" id="Gmp-q7-eWf"/>
                                 <constraint firstItem="CEv-Dd-OFW" firstAttribute="top" secondItem="kIZ-ij-Mdm" secondAttribute="bottom" constant="39" id="IQW-op-29O"/>
                                 <constraint firstItem="gvD-8E-6eQ" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="38" id="LCp-1A-y7I"/>
                                 <constraint firstAttribute="trailing" secondItem="I4e-Is-O24" secondAttribute="trailing" constant="35" id="MCj-o3-CQa"/>
                                 <constraint firstItem="hAt-JG-xzC" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="38" id="N00-kb-h4i"/>
+                                <constraint firstItem="HLf-YD-Lf9" firstAttribute="centerY" secondItem="kIZ-ij-Mdm" secondAttribute="centerY" id="Qwh-Jg-Eo5"/>
                                 <constraint firstItem="wWC-i2-6AC" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="38" id="ZKf-ff-un5"/>
                                 <constraint firstAttribute="trailing" secondItem="703-cC-pYB" secondAttribute="trailing" constant="35" id="aJD-Qo-HUn"/>
                                 <constraint firstItem="gvD-8E-6eQ" firstAttribute="top" secondItem="TD0-AX-Ji2" secondAttribute="bottom" constant="36" id="c6N-Jx-33l"/>
@@ -249,6 +265,7 @@
                                 <constraint firstAttribute="trailing" secondItem="8f7-oQ-PaE" secondAttribute="trailing" constant="35" id="mi2-IG-S8K"/>
                                 <constraint firstItem="8f7-oQ-PaE" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="35" id="mjk-r2-wqT"/>
                                 <constraint firstItem="kIZ-ij-Mdm" firstAttribute="leading" secondItem="Ae3-wT-bzo" secondAttribute="leading" constant="35" id="tDI-ei-QsP"/>
+                                <constraint firstItem="HLf-YD-Lf9" firstAttribute="width" secondItem="kIZ-ij-Mdm" secondAttribute="width" multiplier="1.0031" id="uVX-9j-xKd"/>
                             </constraints>
                         </view>
                     </subviews>

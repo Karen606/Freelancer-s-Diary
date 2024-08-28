@@ -27,6 +27,11 @@ class ProjectViewModel {
     }
     
     func saveProjectToUserDefaults() {
+        print("Project: \(String(describing: project))")
+        print("Tasks: \(String(describing: tasks))")
+        print("Client: \(String(describing: client))")
+        print("Project Status: \(String(describing: projectStatus))")
+
         guard let project = project, let tasks = tasks, let client = client, let projectStatus = projectStatus else { return }
         var projects: [ProjectModel] = []
         if let data = UserDefaults.standard.data(forKey: .projects),
@@ -37,6 +42,7 @@ class ProjectViewModel {
             projects.append(newProject)
         if let encodedProjects = try? JSONEncoder().encode(projects) {
             UserDefaults.standard.set(encodedProjects, forKey: .projects)
+            print("set \(encodedProjects)")
         }
     }
     
@@ -53,6 +59,6 @@ class ProjectViewModel {
         project = nil
         tasks = nil
         client = nil
-        projectStatus = nil
+        projectStatus = .active
     }
 }

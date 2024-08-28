@@ -61,6 +61,8 @@ class HomeViewController: UIViewController {
     
     @objc private func userDefaultsDidChange(_ notification: Notification) {
         ProjectViewModel.shared.loadProjectsFromUserDefaults()
+        viewModel.loadProjectsFromUserDefaults()
+        
     }
     
     @IBAction func choseActive(_ sender: UIButton) {

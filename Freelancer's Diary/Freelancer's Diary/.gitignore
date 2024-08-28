@@ -1,0 +1,12 @@
+.DS_Store
+# Ignore DS_Store files
+.DS_Store
+
+# Ignore Xcode user data
+*.xcuserdatad
+*.xcdebugger
+*.xccheckout
+*.xcworkspace/xcuserdata
+
+# Ignore Swift Package Manager data
+*.xcworkspace/xcshareddata/swiftpm/

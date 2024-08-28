@@ -18,7 +18,7 @@ extension UIViewController {
         }
         let titleLabel = UILabel()
         titleLabel.text = title
-        titleLabel.textColor = .white
+        titleLabel.textColor = UIColor(named: "ButtonColor")
         titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
     }

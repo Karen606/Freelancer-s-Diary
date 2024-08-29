@@ -151,6 +151,6 @@ extension NewProjectViewController: FSCalendarDelegate {
 
 extension NewProjectViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        return true
+        return !(view.hitTest(touch.location(in: view), with: nil)?.isDescendant(of: calendar) == true)
     }
 }

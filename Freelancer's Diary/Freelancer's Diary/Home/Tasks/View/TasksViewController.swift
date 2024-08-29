@@ -22,6 +22,7 @@ class TasksViewController: UIViewController {
         setNavigationBar(title: "Tasks", button: nextButton)
         nextButton.addTarget(self, action: #selector(clickedNextButton), for: .touchUpInside)
         setupTableView()
+        bindViewModel()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tapGesture.delegate = self
         self.view.addGestureRecognizer(tapGesture)

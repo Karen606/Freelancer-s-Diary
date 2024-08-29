@@ -115,5 +115,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         16
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let projectVC = ProjectViewController(nibName: "ProjectViewController", bundle: nil)
+        projectVC.project = viewModel.projects[indexPath.section]
+        self.navigationController?.pushViewController(projectVC, animated: true)
+    }
 }

@@ -35,4 +35,15 @@ enum Difficulty: Codable {
     case easy
     case medium
     case hard
+    
+    var stringValue: String {
+        switch self {
+        case .easy:
+            return "Easy"
+        case .medium:
+            return "Medium"
+        case .hard:
+            return "Hard"
+        }
+    }
 }

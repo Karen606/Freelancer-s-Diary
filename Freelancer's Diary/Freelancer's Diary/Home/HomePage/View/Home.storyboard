@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wGa-Bb-ABG">
-                                <rect key="frame" x="36.666666666666657" y="121" width="320" height="40"/>
+                                <rect key="frame" x="36.666666666666657" y="83" width="320" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-mp-4pI">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I1Y-bU-rni">
-                                <rect key="frame" x="0.0" y="169" width="393" height="450"/>
+                                <rect key="frame" x="0.0" y="131" width="393" height="488"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM0-6V-71f">
@@ -143,16 +143,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUJ-Sf-9Gi">
-                                <rect key="frame" x="0.0" y="169" width="393" height="450"/>
+                                <rect key="frame" x="0.0" y="131" width="393" height="488"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQj-fQ-hNs">
-                                        <rect key="frame" x="50" y="210.66666666666669" width="293" height="28.666666666666657"/>
+                                        <rect key="frame" x="50" y="229.66666666666669" width="293" height="28.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no completed projects" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx8-Lc-zSh">
-                                        <rect key="frame" x="90" y="254.33333333333334" width="213" height="57.333333333333343"/>
+                                        <rect key="frame" x="90" y="273.33333333333331" width="213" height="57.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <color key="textColor" red="0.23137254901960785" green="0.16862745098039217" blue="0.29803921568627451" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -178,8 +178,8 @@
                             <constraint firstItem="aM0-6V-71f" firstAttribute="top" secondItem="I1Y-bU-rni" secondAttribute="bottom" constant="25" id="6kF-n4-Ph7"/>
                             <constraint firstItem="aM0-6V-71f" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8YO-7E-bHO"/>
                             <constraint firstItem="mpZ-2u-UCg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="AtY-O1-nL7"/>
+                            <constraint firstItem="wGa-Bb-ABG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="FM8-gr-52X"/>
                             <constraint firstItem="mpZ-2u-UCg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="19" id="H5f-oM-raK"/>
-                            <constraint firstItem="wGa-Bb-ABG" firstAttribute="top" secondItem="mpZ-2u-UCg" secondAttribute="bottom" constant="25.333333333333329" id="QSR-D6-qc2"/>
                             <constraint firstItem="I1Y-bU-rni" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SC3-gk-3b8"/>
                             <constraint firstItem="wGa-Bb-ABG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="WYU-WQ-SvJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="I1Y-bU-rni" secondAttribute="trailing" id="a8g-vI-FrP"/>

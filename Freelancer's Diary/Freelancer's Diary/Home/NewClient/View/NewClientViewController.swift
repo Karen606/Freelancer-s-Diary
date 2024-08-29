@@ -37,6 +37,9 @@ class NewClientViewController: UIViewController {
         descriptionTextView.delegate = self
         phoneNumberTextField.delegate = self
         emailTextField.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture.delegate = self
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     private func bindViewModel() {
@@ -89,5 +92,11 @@ extension NewClientViewController: UITextFieldDelegate {
 extension NewClientViewController: UITextViewDelegate {
     func textViewDidChangeSelection(_ textView: UITextView) {
         viewModel.newClient.description = textView.text
+    }
+}
+
+extension NewClientViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        return true
     }
 }

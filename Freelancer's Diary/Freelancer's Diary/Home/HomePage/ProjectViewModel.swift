@@ -33,7 +33,7 @@ class ProjectViewModel {
                let decodedProjects = try? JSONDecoder().decode([ProjectModel].self, from: data) {
                 projects = decodedProjects
             }
-            let newProject = ProjectModel(project: project, status: projectStatus, tasks: tasks, client: client)
+        let newProject = ProjectModel(project: project, status: projectStatus, tasks: tasks, client: client, id: UUID())
             projects.append(newProject)
         if let encodedProjects = try? JSONEncoder().encode(projects) {
             UserDefaults.standard.set(encodedProjects, forKey: .projects)
@@ -47,6 +47,13 @@ class ProjectViewModel {
     func updateProject(at index: Int, with project: ProjectModel) {
         guard index < projects.count else { return }
         projects[index] = project
+    }
+    
+    func removeProject(with project: ProjectModel) {
+        projects.removeAll(where: { $0 == project })
+        if let encodedProjects = try? JSONEncoder().encode(projects) {
+            UserDefaults.standard.set(encodedProjects, forKey: .projects)
+        }
     }
     
     func clear() {

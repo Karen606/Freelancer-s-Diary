@@ -56,7 +56,27 @@ class ProjectViewController: UIViewController {
         }
     }
     
+    @IBAction func clickedRemove(_ sender: UIButton) {
+        let dialogView = RemoveConfirmationDialog.instanceFromNib()
+        dialogView.commonInit()
+        dialogView.delegate = self
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                let window = windowScene.windows.first {
+            dialogView.frame = window.bounds
+            window.addSubview(dialogView)
+        }
+    }
+    
     @IBAction func clickedBackButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+}
+
+extension ProjectViewController: RemoveConfirmationDialogDelegate {
+    func removeProject() {
+        if let project = project {
+            ProjectViewModel.shared.removeProject(with: project)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }

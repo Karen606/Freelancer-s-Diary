@@ -7,11 +7,16 @@
 
 import Foundation
 
-struct ProjectModel: Codable {
+struct ProjectModel: Codable, Equatable {
     var project: Project
     var status: ProjectStatus
     var tasks: [TaskModel]
     var client: ClientModel
+    var id: UUID
+    
+    static func == (lhs: ProjectModel, rhs: ProjectModel) -> Bool {
+        return lhs.id == rhs.id
+    }
     
     func getTotalPrice() -> Int {
         return tasks.reduce(0) { $0 + (Int($1.price) ?? 0) }

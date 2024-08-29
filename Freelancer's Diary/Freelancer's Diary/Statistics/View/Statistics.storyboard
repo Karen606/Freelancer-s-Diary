@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9RI-mM-Tjj">
-                                <rect key="frame" x="32" y="304" width="328" height="88"/>
+                                <rect key="frame" x="32" y="325" width="328" height="88"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatisticsBG" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-iO-8l5">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="88"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ll-Vk-xv7">
-                                <rect key="frame" x="33" y="186" width="328" height="88"/>
+                                <rect key="frame" x="33" y="207" width="328" height="88"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatisticsBG" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-IA-xtZ">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="88"/>
@@ -130,7 +130,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7Ll-Vk-xv7" secondAttribute="trailing" constant="32" id="Jxy-eH-hCY"/>
                             <constraint firstItem="ZJP-Zg-nhK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="Lxd-La-g5M"/>
                             <constraint firstItem="9RI-mM-Tjj" firstAttribute="top" secondItem="7Ll-Vk-xv7" secondAttribute="bottom" constant="30" id="Vov-nU-f77"/>
-                            <constraint firstItem="7Ll-Vk-xv7" firstAttribute="top" secondItem="ZJP-Zg-nhK" secondAttribute="bottom" constant="9" id="Wf2-5j-Qmw"/>
+                            <constraint firstItem="7Ll-Vk-xv7" firstAttribute="top" secondItem="ZJP-Zg-nhK" secondAttribute="bottom" constant="30" id="Wf2-5j-Qmw"/>
                             <constraint firstItem="9RI-mM-Tjj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="aS0-CX-L1t"/>
                             <constraint firstItem="7Ll-Vk-xv7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="33" id="i0h-Ci-nou"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZJP-Zg-nhK" secondAttribute="trailing" constant="33" id="rMs-q9-3VB"/>

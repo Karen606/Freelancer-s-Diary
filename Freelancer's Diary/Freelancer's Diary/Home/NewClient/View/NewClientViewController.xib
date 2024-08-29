@@ -36,7 +36,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-Tj-nLY" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-Tj-nLY" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
                                     <rect key="frame" x="35" y="49" width="323" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="xae-tR-4Xd"/>

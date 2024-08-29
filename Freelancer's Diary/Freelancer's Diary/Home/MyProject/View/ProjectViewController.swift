@@ -58,7 +58,7 @@ class ProjectViewController: UIViewController {
     
     @IBAction func clickedRemove(_ sender: UIButton) {
         let dialogView = RemoveConfirmationDialog.instanceFromNib()
-        dialogView.commonInit()
+        dialogView.commonInit(projectName: project?.project.name)
         dialogView.delegate = self
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                 let window = windowScene.windows.first {

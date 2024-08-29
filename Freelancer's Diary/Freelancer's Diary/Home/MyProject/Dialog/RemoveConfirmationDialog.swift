@@ -12,6 +12,8 @@ protocol RemoveConfirmationDialogDelegate: AnyObject {
 }
 
 class RemoveConfirmationDialog: UIView {
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
     weak var delegate: RemoveConfirmationDialogDelegate?
     
     override init(frame: CGRect) {
@@ -22,7 +24,8 @@ class RemoveConfirmationDialog: UIView {
         super.init(coder: aDecoder)
     }
 
-    func commonInit() {
+    func commonInit(projectName: String?) {
+        self.descriptionLabel.text = "Are you sure you want to remove? “\(projectName ?? "")”"
         self.backgroundColor = .systemBackground.withAlphaComponent(0.4)
         self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.33).cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 2)

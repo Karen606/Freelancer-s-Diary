@@ -8,9 +8,9 @@
 import Foundation
 
 class StatisticsViewModel {
-    @Published var totalpPrice: String = ""
-    @Published var totalCompleted: String = ""
-    @Published var totalClients: String = ""
+    @Published var totalpPrice: String = "0$"
+    @Published var totalCompleted: String = "0"
+    @Published var totalClients: String = "0"
     
     init() {
         loadProjectsFromUserDefaults()

@@ -66,6 +66,7 @@ class SplashViewController: UIViewController {
         if currentIndex == 0 {
             setCurrentPage(index: 1)
         } else {
+            UserDefaults.standard.set(true, forKey: .hasLaunchedBeforeKey)
             let homeVC = UIStoryboard(name: "TabBar", bundle: .main).instantiateViewController(withIdentifier: "TabBarController")
             homeVC.setAsRoot()
         }

@@ -8,22 +8,20 @@
 import UIKit
 
 class SecondSplashViewController: UIViewController {
-
+    @IBOutlet weak var descriptionlabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let description = "Create your first Task, write Down your tasks and goals, set a deadline, and stick to your goals."
+        let attributedString = NSMutableAttributedString(string: description)
+        if let range = description.range(of: "Task") {
+            let taskRange = NSRange(range, in: description)
+            attributedString.addAttribute(.foregroundColor, value: UIColor(named: "ButtonColor")?.withAlphaComponent(0.5) ?? .gray, range: taskRange)
+        }
+        if let range = description.range(of: "Down") {
+            let downRange = NSRange(range, in: description)
+            attributedString.addAttribute(.foregroundColor, value: UIColor(named: "ButtonColor")?.withAlphaComponent(0.5) ?? .gray, range: downRange)
+        }
+        descriptionlabel.attributedText = attributedString
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

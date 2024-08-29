@@ -9,21 +9,15 @@ import UIKit
 
 class FirstSplashViewController: UIViewController {
 
+    @IBOutlet weak var descriptionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let description = "The application will help you develop your Projects and monitor statistics"
+        let attributedString = NSMutableAttributedString(string: description)
+        if let range = description.range(of: "Projects") {
+            let nsRange = NSRange(range, in: description)
+            attributedString.addAttribute(.foregroundColor, value: UIColor(named: "ButtonColor")?.withAlphaComponent(0.5) ?? .gray, range: nsRange)
+        }
+        descriptionLabel.attributedText = attributedString
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

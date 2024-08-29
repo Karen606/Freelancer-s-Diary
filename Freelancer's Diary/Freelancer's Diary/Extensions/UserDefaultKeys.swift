@@ -10,4 +10,5 @@ import Foundation
 extension String {
     static let projects = "projects"
     static let clients = "clients"
+    static let hasLaunchedBeforeKey = "hasLaunchedBefore"
 }

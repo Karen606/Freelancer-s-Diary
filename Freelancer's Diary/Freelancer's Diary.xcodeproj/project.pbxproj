@@ -29,6 +29,40 @@
 		6B2B70752C7E0FB6007576C7 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2B70742C7E0FB6007576C7 /* Statistics.storyboard */; };
 		6B2B70772C7E0FBF007576C7 /* Clients.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2B70762C7E0FBF007576C7 /* Clients.storyboard */; };
 		6B2B70792C7E0FC9007576C7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2B70782C7E0FC9007576C7 /* Settings.storyboard */; };
+		6B5A05642C7F1A0500D15E9F /* NewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A05622C7F1A0500D15E9F /* NewClientViewController.swift */; };
+		6B5A05652C7F1A0500D15E9F /* NewClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A05632C7F1A0500D15E9F /* NewClientViewController.xib */; };
+		6B5A05682C7F1F1300D15E9F /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A05672C7F1F1300D15E9F /* ClientModel.swift */; };
+		6B5A056C2C7F1F8D00D15E9F /* SelectClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A056A2C7F1F8D00D15E9F /* SelectClientViewController.swift */; };
+		6B5A056D2C7F1F8D00D15E9F /* SelectClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A056B2C7F1F8D00D15E9F /* SelectClientViewController.xib */; };
+		6B5A05712C7F1FCA00D15E9F /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A056F2C7F1FCA00D15E9F /* ClientTableViewCell.swift */; };
+		6B5A05722C7F1FCA00D15E9F /* ClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A05702C7F1FCA00D15E9F /* ClientTableViewCell.xib */; };
+		6B5A05772C7F23C600D15E9F /* ClientListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A05762C7F23C600D15E9F /* ClientListViewModel.swift */; };
+		6B67BEBC2C80056C0099456D /* EdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B67BEBB2C80056C0099456D /* EdgeLabel.swift */; };
+		6B67BEBF2C8008950099456D /* RemoveConfirmationDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B67BEBE2C8008950099456D /* RemoveConfirmationDialog.xib */; };
+		6B67BEC12C8008B00099456D /* RemoveConfirmationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B67BEC02C8008B00099456D /* RemoveConfirmationDialog.swift */; };
+		6B9B69A72C7FB6800011DB10 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 6B9B69A62C7FB6800011DB10 /* FSCalendar */; };
+		6B9B69B42C7FD7DB0011DB10 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B69B32C7FD7DB0011DB10 /* StatisticsViewModel.swift */; };
+		6B9B69B92C7FE9270011DB10 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B69B72C7FE9270011DB10 /* ProjectViewController.swift */; };
+		6B9B69BA2C7FE9270011DB10 /* ProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B9B69B82C7FE9270011DB10 /* ProjectViewController.xib */; };
+		6BAB22282C7E26BA00EE021D /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB22272C7E26BA00EE021D /* ProjectModel.swift */; };
+		6BAB222B2C7E282C00EE021D /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB222A2C7E282C00EE021D /* ProjectListViewModel.swift */; };
+		6BAB222E2C7E2AD800EE021D /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB222D2C7E2AD800EE021D /* UserDefaultKeys.swift */; };
+		6BAB22322C7E328500EE021D /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAB22312C7E328500EE021D /* ProjectTableViewCell.xib */; };
+		6BAB22332C7E328500EE021D /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB22302C7E328500EE021D /* ProjectTableViewCell.swift */; };
+		6BAB22382C7E3CD000EE021D /* NewProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAB22372C7E3CD000EE021D /* NewProjectViewController.xib */; };
+		6BAB22392C7E3CD000EE021D /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB22362C7E3CD000EE021D /* NewProjectViewController.swift */; };
+		6BAB223B2C7E78F700EE021D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB223A2C7E78F700EE021D /* NavigationViewController.swift */; };
+		6BAB223D2C7E984B00EE021D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAB223C2C7E984B00EE021D /* ViewController.swift */; };
+		6BC823312C7F381900DE4584 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823302C7F381900DE4584 /* ProjectViewModel.swift */; };
+		6BC823342C7F3F0800DE4584 /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */; };
+		6BC823362C7F46CD00DE4584 /* NewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823352C7F46CD00DE4584 /* NewClientViewModel.swift */; };
+		6BE2791E2C7E9F50006D1638 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */; };
+		6BEFC8D42C7EB1290007B7EC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFC8D22C7EB1290007B7EC /* TasksViewController.swift */; };
+		6BEFC8D52C7EB1290007B7EC /* TasksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFC8D32C7EB1290007B7EC /* TasksViewController.xib */; };
+		6BEFC8D82C7EB4650007B7EC /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFC8D72C7EB4650007B7EC /* TaskModel.swift */; };
+		6BEFC8DB2C7EB4DA0007B7EC /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFC8DA2C7EB4DA0007B7EC /* TaskListViewModel.swift */; };
+		6BEFC8DF2C7EB7310007B7EC /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFC8DD2C7EB7310007B7EC /* TaskTableViewCell.swift */; };
+		6BEFC8E02C7EB7310007B7EC /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFC8DE2C7EB7310007B7EC /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +90,39 @@
 		6B2B70742C7E0FB6007576C7 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		6B2B70762C7E0FBF007576C7 /* Clients.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clients.storyboard; sourceTree = "<group>"; };
 		6B2B70782C7E0FC9007576C7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		6B5A05622C7F1A0500D15E9F /* NewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewController.swift; sourceTree = "<group>"; };
+		6B5A05632C7F1A0500D15E9F /* NewClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewClientViewController.xib; sourceTree = "<group>"; };
+		6B5A05672C7F1F1300D15E9F /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		6B5A056A2C7F1F8D00D15E9F /* SelectClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectClientViewController.swift; sourceTree = "<group>"; };
+		6B5A056B2C7F1F8D00D15E9F /* SelectClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectClientViewController.xib; sourceTree = "<group>"; };
+		6B5A056F2C7F1FCA00D15E9F /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		6B5A05702C7F1FCA00D15E9F /* ClientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientTableViewCell.xib; sourceTree = "<group>"; };
+		6B5A05762C7F23C600D15E9F /* ClientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListViewModel.swift; sourceTree = "<group>"; };
+		6B67BEBB2C80056C0099456D /* EdgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeLabel.swift; sourceTree = "<group>"; };
+		6B67BEBE2C8008950099456D /* RemoveConfirmationDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoveConfirmationDialog.xib; sourceTree = "<group>"; };
+		6B67BEC02C8008B00099456D /* RemoveConfirmationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveConfirmationDialog.swift; sourceTree = "<group>"; };
+		6B9B69B32C7FD7DB0011DB10 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		6B9B69B72C7FE9270011DB10 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		6B9B69B82C7FE9270011DB10 /* ProjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectViewController.xib; sourceTree = "<group>"; };
+		6BAB22272C7E26BA00EE021D /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		6BAB222A2C7E282C00EE021D /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
+		6BAB222D2C7E2AD800EE021D /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		6BAB22302C7E328500EE021D /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		6BAB22312C7E328500EE021D /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		6BAB22362C7E3CD000EE021D /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
+		6BAB22372C7E3CD000EE021D /* NewProjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProjectViewController.xib; sourceTree = "<group>"; };
+		6BAB223A2C7E78F700EE021D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		6BAB223C2C7E984B00EE021D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BC823302C7F381900DE4584 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
+		6BC823352C7F46CD00DE4584 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
+		6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		6BEFC8D22C7EB1290007B7EC /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		6BEFC8D32C7EB1290007B7EC /* TasksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksViewController.xib; sourceTree = "<group>"; };
+		6BEFC8D72C7EB4650007B7EC /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		6BEFC8DA2C7EB4DA0007B7EC /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		6BEFC8DD2C7EB7310007B7EC /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		6BEFC8DE2C7EB7310007B7EC /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9B69A72C7FB6800011DB10 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +156,7 @@
 		6B2B70072C7DC465007576C7 /* Freelancer's Diary */ = {
 			isa = PBXGroup;
 			children = (
+				6BAB222C2C7E2ABB00EE021D /* Extensions */,
 				6B2B706D2C7E0F15007576C7 /* Settings */,
 				6B2B70682C7E0F02007576C7 /* Clients */,
 				6B2B70632C7E0EE7007576C7 /* Statistics */,
@@ -147,6 +216,7 @@
 			children = (
 				6B2B70582C7E0E19007576C7 /* TabBar.storyboard */,
 				6B2B705C2C7E0E8C007576C7 /* TabBarController.swift */,
+				6BAB223A2C7E78F700EE021D /* NavigationViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -154,8 +224,12 @@
 		6B2B705E2C7E0ECD007576C7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6B2B705F2C7E0EE4007576C7 /* HomeViewController.swift */,
-				6B2B70722C7E0FAB007576C7 /* Home.storyboard */,
+				6B9B69B52C7FE8FA0011DB10 /* MyProject */,
+				6B5A05602C7F19A400D15E9F /* NewClient */,
+				6B5A055E2C7F18B000D15E9F /* SelectClient */,
+				6BEFC8D02C7EB1080007B7EC /* Tasks */,
+				6BAB22352C7E3C7900EE021D /* NewProject */,
+				6BAB22342C7E3C0500EE021D /* HomePage */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -163,8 +237,8 @@
 		6B2B70632C7E0EE7007576C7 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				6B2B70642C7E0EFC007576C7 /* StatisticsViewController.swift */,
-				6B2B70742C7E0FB6007576C7 /* Statistics.storyboard */,
+				6B9B69B22C7FD7A00011DB10 /* ViewModel */,
+				6B9B69AC2C7FD1A60011DB10 /* View */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -172,8 +246,7 @@
 		6B2B70682C7E0F02007576C7 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
-				6B2B70692C7E0F0E007576C7 /* ClientsViewController.swift */,
-				6B2B70762C7E0FBF007576C7 /* Clients.storyboard */,
+				6B9B69A82C7FCA4D0011DB10 /* View */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -185,6 +258,266 @@
 				6B2B70782C7E0FC9007576C7 /* Settings.storyboard */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		6B5A055E2C7F18B000D15E9F /* SelectClient */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A05752C7F23B000D15E9F /* ViewModel */,
+				6B5A056E2C7F1FB000D15E9F /* Cell */,
+				6B5A055F2C7F18B900D15E9F /* View */,
+			);
+			path = SelectClient;
+			sourceTree = "<group>";
+		};
+		6B5A055F2C7F18B900D15E9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A056A2C7F1F8D00D15E9F /* SelectClientViewController.swift */,
+				6B5A056B2C7F1F8D00D15E9F /* SelectClientViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B5A05602C7F19A400D15E9F /* NewClient */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A05732C7F238B00D15E9F /* ViewModel */,
+				6B5A05662C7F1F0600D15E9F /* Model */,
+				6B5A05612C7F19EE00D15E9F /* View */,
+			);
+			path = NewClient;
+			sourceTree = "<group>";
+		};
+		6B5A05612C7F19EE00D15E9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A05622C7F1A0500D15E9F /* NewClientViewController.swift */,
+				6B5A05632C7F1A0500D15E9F /* NewClientViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B5A05662C7F1F0600D15E9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A05672C7F1F1300D15E9F /* ClientModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B5A056E2C7F1FB000D15E9F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A056F2C7F1FCA00D15E9F /* ClientTableViewCell.swift */,
+				6B5A05702C7F1FCA00D15E9F /* ClientTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B5A05732C7F238B00D15E9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC823352C7F46CD00DE4584 /* NewClientViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B5A05752C7F23B000D15E9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A05762C7F23C600D15E9F /* ClientListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B67BEBD2C8008780099456D /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				6B67BEBE2C8008950099456D /* RemoveConfirmationDialog.xib */,
+				6B67BEC02C8008B00099456D /* RemoveConfirmationDialog.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		6B9B69A82C7FCA4D0011DB10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B2B70692C7E0F0E007576C7 /* ClientsViewController.swift */,
+				6B2B70762C7E0FBF007576C7 /* Clients.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B9B69AC2C7FD1A60011DB10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B2B70642C7E0EFC007576C7 /* StatisticsViewController.swift */,
+				6B2B70742C7E0FB6007576C7 /* Statistics.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B9B69B22C7FD7A00011DB10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B9B69B32C7FD7DB0011DB10 /* StatisticsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B9B69B52C7FE8FA0011DB10 /* MyProject */ = {
+			isa = PBXGroup;
+			children = (
+				6B67BEBD2C8008780099456D /* Dialog */,
+				6B9B69B62C7FE9060011DB10 /* View */,
+			);
+			path = MyProject;
+			sourceTree = "<group>";
+		};
+		6B9B69B62C7FE9060011DB10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B9B69B72C7FE9270011DB10 /* ProjectViewController.swift */,
+				6B9B69B82C7FE9270011DB10 /* ProjectViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BAB22252C7E267C00EE021D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B2B705F2C7E0EE4007576C7 /* HomeViewController.swift */,
+				6B2B70722C7E0FAB007576C7 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BAB22262C7E268400EE021D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB22272C7E26BA00EE021D /* ProjectModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BAB22292C7E27F500EE021D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB222A2C7E282C00EE021D /* ProjectListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BAB222C2C7E2ABB00EE021D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB222D2C7E2AD800EE021D /* UserDefaultKeys.swift */,
+				6BAB223C2C7E984B00EE021D /* ViewController.swift */,
+				6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */,
+				6B67BEBB2C80056C0099456D /* EdgeLabel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6BAB222F2C7E325F00EE021D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB22302C7E328500EE021D /* ProjectTableViewCell.swift */,
+				6BAB22312C7E328500EE021D /* ProjectTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BAB22342C7E3C0500EE021D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB222F2C7E325F00EE021D /* Cell */,
+				6BAB22292C7E27F500EE021D /* ViewModel */,
+				6BAB22262C7E268400EE021D /* Model */,
+				6BAB22252C7E267C00EE021D /* View */,
+				6BC823302C7F381900DE4584 /* ProjectViewModel.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		6BAB22352C7E3C7900EE021D /* NewProject */ = {
+			isa = PBXGroup;
+			children = (
+				6BC823322C7F3EFB00DE4584 /* ViewModel */,
+				6BC8232D2C7F33AF00DE4584 /* Model */,
+				6BC8232C2C7F337900DE4584 /* View */,
+			);
+			path = NewProject;
+			sourceTree = "<group>";
+		};
+		6BC8232C2C7F337900DE4584 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BAB22362C7E3CD000EE021D /* NewProjectViewController.swift */,
+				6BAB22372C7E3CD000EE021D /* NewProjectViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BC8232D2C7F33AF00DE4584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BC823322C7F3EFB00DE4584 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BEFC8D02C7EB1080007B7EC /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				6BEFC8DC2C7EB71A0007B7EC /* Cell */,
+				6BEFC8D92C7EB4C20007B7EC /* ViewModel */,
+				6BEFC8D62C7EB45C0007B7EC /* Model */,
+				6BEFC8D12C7EB1130007B7EC /* View */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		6BEFC8D12C7EB1130007B7EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BEFC8D22C7EB1290007B7EC /* TasksViewController.swift */,
+				6BEFC8D32C7EB1290007B7EC /* TasksViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BEFC8D62C7EB45C0007B7EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BEFC8D72C7EB4650007B7EC /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BEFC8D92C7EB4C20007B7EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BEFC8DA2C7EB4DA0007B7EC /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BEFC8DC2C7EB71A0007B7EC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BEFC8DD2C7EB7310007B7EC /* TaskTableViewCell.swift */,
+				6BEFC8DE2C7EB7310007B7EC /* TaskTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +536,9 @@
 			dependencies = (
 			);
 			name = "Freelancer's Diary";
+			packageProductDependencies = (
+				6B9B69A62C7FB6800011DB10 /* FSCalendar */,
+			);
 			productName = "Freelancer's Diary";
 			productReference = 6B2B70052C7DC465007576C7 /* Freelancer's Diary.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +567,9 @@
 				Base,
 			);
 			mainGroup = 6B2B6FFC2C7DC465007576C7;
+			packageReferences = (
+				6B9B69A52C7FB6800011DB10 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 6B2B70062C7DC465007576C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,13 +588,22 @@
 				6B2B70772C7E0FBF007576C7 /* Clients.storyboard in Resources */,
 				6B2B70732C7E0FAB007576C7 /* Home.storyboard in Resources */,
 				6B2B70482C7DCEE4007576C7 /* SFProText-Regular.ttf in Resources */,
+				6B5A05652C7F1A0500D15E9F /* NewClientViewController.xib in Resources */,
 				6B2B70122C7DC466007576C7 /* Assets.xcassets in Resources */,
+				6BEFC8D52C7EB1290007B7EC /* TasksViewController.xib in Resources */,
 				6B2B70522C7DF5FB007576C7 /* SecondSplashViewController.xib in Resources */,
+				6B67BEBF2C8008950099456D /* RemoveConfirmationDialog.xib in Resources */,
 				6B2B70792C7E0FC9007576C7 /* Settings.storyboard in Resources */,
+				6BAB22322C7E328500EE021D /* ProjectTableViewCell.xib in Resources */,
+				6BEFC8E02C7EB7310007B7EC /* TaskTableViewCell.xib in Resources */,
 				6B2B70152C7DC466007576C7 /* Base in Resources */,
+				6B5A05722C7F1FCA00D15E9F /* ClientTableViewCell.xib in Resources */,
+				6BAB22382C7E3CD000EE021D /* NewProjectViewController.xib in Resources */,
 				6B2B70752C7E0FB6007576C7 /* Statistics.storyboard in Resources */,
+				6B9B69BA2C7FE9270011DB10 /* ProjectViewController.xib in Resources */,
 				6B2B70592C7E0E19007576C7 /* TabBar.storyboard in Resources */,
 				6B2B704A2C7DF075007576C7 /* Splash.storyboard in Resources */,
+				6B5A056D2C7F1F8D00D15E9F /* SelectClientViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +614,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5A05642C7F1A0500D15E9F /* NewClientViewController.swift in Sources */,
 				6B2B70092C7DC465007576C7 /* AppDelegate.swift in Sources */,
+				6BEFC8DB2C7EB4DA0007B7EC /* TaskListViewModel.swift in Sources */,
+				6BC823312C7F381900DE4584 /* ProjectViewModel.swift in Sources */,
 				6B2B704E2C7DF170007576C7 /* SplashViewController.swift in Sources */,
+				6BC823362C7F46CD00DE4584 /* NewClientViewModel.swift in Sources */,
 				6B2B70702C7E0F25007576C7 /* SettingsViewController.swift in Sources */,
+				6BAB223B2C7E78F700EE021D /* NavigationViewController.swift in Sources */,
+				6B9B69B92C7FE9270011DB10 /* ProjectViewController.swift in Sources */,
+				6BAB222B2C7E282C00EE021D /* ProjectListViewModel.swift in Sources */,
+				6B5A05772C7F23C600D15E9F /* ClientListViewModel.swift in Sources */,
+				6BE2791E2C7E9F50006D1638 /* CustomTextField.swift in Sources */,
+				6B5A05712C7F1FCA00D15E9F /* ClientTableViewCell.swift in Sources */,
+				6BEFC8D82C7EB4650007B7EC /* TaskModel.swift in Sources */,
 				6B2B70222C7DC699007576C7 /* FirstSplashViewController.swift in Sources */,
 				6B2B706B2C7E0F0E007576C7 /* ClientsViewController.swift in Sources */,
+				6BAB22282C7E26BA00EE021D /* ProjectModel.swift in Sources */,
+				6B5A056C2C7F1F8D00D15E9F /* SelectClientViewController.swift in Sources */,
 				6B2B70612C7E0EE4007576C7 /* HomeViewController.swift in Sources */,
+				6B67BEC12C8008B00099456D /* RemoveConfirmationDialog.swift in Sources */,
 				6B2B700B2C7DC465007576C7 /* SceneDelegate.swift in Sources */,
+				6BEFC8DF2C7EB7310007B7EC /* TaskTableViewCell.swift in Sources */,
+				6B67BEBC2C80056C0099456D /* EdgeLabel.swift in Sources */,
+				6BAB22392C7E3CD000EE021D /* NewProjectViewController.swift in Sources */,
 				6B2B705D2C7E0E8C007576C7 /* TabBarController.swift in Sources */,
+				6B5A05682C7F1F1300D15E9F /* ClientModel.swift in Sources */,
+				6BAB223D2C7E984B00EE021D /* ViewController.swift in Sources */,
+				6BAB22332C7E328500EE021D /* ProjectTableViewCell.swift in Sources */,
+				6B9B69B42C7FD7DB0011DB10 /* StatisticsViewModel.swift in Sources */,
 				6B2B70662C7E0EFC007576C7 /* StatisticsViewController.swift in Sources */,
+				6BC823342C7F3F0800DE4584 /* NewProjectViewModel.swift in Sources */,
 				6B2B70512C7DF5FB007576C7 /* SecondSplashViewController.swift in Sources */,
+				6BEFC8D42C7EB1290007B7EC /* TasksViewController.swift in Sources */,
+				6BAB222E2C7E2AD800EE021D /* UserDefaultKeys.swift in Sources */,
 				6B2B70562C7E0CA7007576C7 /* SplashPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +718,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -403,7 +775,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -421,6 +793,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Freelancer's Diary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -428,6 +801,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +823,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YUSQBCAX9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Freelancer's Diary/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -456,6 +831,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +867,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B9B69A52C7FB6800011DB10 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B9B69A62C7FB6800011DB10 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B9B69A52C7FB6800011DB10 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B2B6FFD2C7DC465007576C7 /* Project object */;
 }

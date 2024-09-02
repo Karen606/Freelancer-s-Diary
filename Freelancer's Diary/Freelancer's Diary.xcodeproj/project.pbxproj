@@ -37,6 +37,12 @@
 		6B5A05712C7F1FCA00D15E9F /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A056F2C7F1FCA00D15E9F /* ClientTableViewCell.swift */; };
 		6B5A05722C7F1FCA00D15E9F /* ClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5A05702C7F1FCA00D15E9F /* ClientTableViewCell.xib */; };
 		6B5A05772C7F23C600D15E9F /* ClientListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A05762C7F23C600D15E9F /* ClientListViewModel.swift */; };
+		6B6531662C85E159007C5631 /* ValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6531652C85E159007C5631 /* ValidationTextField.swift */; };
+		6B6531682C85EE78007C5631 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6531672C85EE78007C5631 /* Validations.swift */; };
+		6B65316A2C862685007C5631 /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6531692C862685007C5631 /* PhoneNumberTextField.swift */; };
+		6B65316D2C8626AC007C5631 /* PriceTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B65316C2C8626AC007C5631 /* PriceTextField.swift */; };
+		6B65316F2C86304A007C5631 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B65316E2C86304A007C5631 /* EmailTextField.swift */; };
+		6B6531712C863513007C5631 /* FormatNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6531702C863513007C5631 /* FormatNumber.swift */; };
 		6B67BEBC2C80056C0099456D /* EdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B67BEBB2C80056C0099456D /* EdgeLabel.swift */; };
 		6B67BEBF2C8008950099456D /* RemoveConfirmationDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B67BEBE2C8008950099456D /* RemoveConfirmationDialog.xib */; };
 		6B67BEC12C8008B00099456D /* RemoveConfirmationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B67BEC02C8008B00099456D /* RemoveConfirmationDialog.swift */; };
@@ -98,6 +104,12 @@
 		6B5A056F2C7F1FCA00D15E9F /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
 		6B5A05702C7F1FCA00D15E9F /* ClientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientTableViewCell.xib; sourceTree = "<group>"; };
 		6B5A05762C7F23C600D15E9F /* ClientListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListViewModel.swift; sourceTree = "<group>"; };
+		6B6531652C85E159007C5631 /* ValidationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTextField.swift; sourceTree = "<group>"; };
+		6B6531672C85EE78007C5631 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		6B6531692C862685007C5631 /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		6B65316C2C8626AC007C5631 /* PriceTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextField.swift; sourceTree = "<group>"; };
+		6B65316E2C86304A007C5631 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		6B6531702C863513007C5631 /* FormatNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatNumber.swift; sourceTree = "<group>"; };
 		6B67BEBB2C80056C0099456D /* EdgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeLabel.swift; sourceTree = "<group>"; };
 		6B67BEBE2C8008950099456D /* RemoveConfirmationDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoveConfirmationDialog.xib; sourceTree = "<group>"; };
 		6B67BEC02C8008B00099456D /* RemoveConfirmationDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveConfirmationDialog.swift; sourceTree = "<group>"; };
@@ -416,6 +428,12 @@
 				6BAB223C2C7E984B00EE021D /* ViewController.swift */,
 				6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */,
 				6B67BEBB2C80056C0099456D /* EdgeLabel.swift */,
+				6B6531652C85E159007C5631 /* ValidationTextField.swift */,
+				6B6531692C862685007C5631 /* PhoneNumberTextField.swift */,
+				6B65316C2C8626AC007C5631 /* PriceTextField.swift */,
+				6B65316E2C86304A007C5631 /* EmailTextField.swift */,
+				6B6531672C85EE78007C5631 /* Validations.swift */,
+				6B6531702C863513007C5631 /* FormatNumber.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -618,6 +636,7 @@
 				6B2B70092C7DC465007576C7 /* AppDelegate.swift in Sources */,
 				6BEFC8DB2C7EB4DA0007B7EC /* TaskListViewModel.swift in Sources */,
 				6BC823312C7F381900DE4584 /* ProjectViewModel.swift in Sources */,
+				6B6531682C85EE78007C5631 /* Validations.swift in Sources */,
 				6B2B704E2C7DF170007576C7 /* SplashViewController.swift in Sources */,
 				6BC823362C7F46CD00DE4584 /* NewClientViewModel.swift in Sources */,
 				6B2B70702C7E0F25007576C7 /* SettingsViewController.swift in Sources */,
@@ -630,12 +649,14 @@
 				6BEFC8D82C7EB4650007B7EC /* TaskModel.swift in Sources */,
 				6B2B70222C7DC699007576C7 /* FirstSplashViewController.swift in Sources */,
 				6B2B706B2C7E0F0E007576C7 /* ClientsViewController.swift in Sources */,
+				6B6531712C863513007C5631 /* FormatNumber.swift in Sources */,
 				6BAB22282C7E26BA00EE021D /* ProjectModel.swift in Sources */,
 				6B5A056C2C7F1F8D00D15E9F /* SelectClientViewController.swift in Sources */,
 				6B2B70612C7E0EE4007576C7 /* HomeViewController.swift in Sources */,
 				6B67BEC12C8008B00099456D /* RemoveConfirmationDialog.swift in Sources */,
 				6B2B700B2C7DC465007576C7 /* SceneDelegate.swift in Sources */,
 				6BEFC8DF2C7EB7310007B7EC /* TaskTableViewCell.swift in Sources */,
+				6B65316A2C862685007C5631 /* PhoneNumberTextField.swift in Sources */,
 				6B67BEBC2C80056C0099456D /* EdgeLabel.swift in Sources */,
 				6BAB22392C7E3CD000EE021D /* NewProjectViewController.swift in Sources */,
 				6B2B705D2C7E0E8C007576C7 /* TabBarController.swift in Sources */,
@@ -644,10 +665,13 @@
 				6BAB22332C7E328500EE021D /* ProjectTableViewCell.swift in Sources */,
 				6B9B69B42C7FD7DB0011DB10 /* StatisticsViewModel.swift in Sources */,
 				6B2B70662C7E0EFC007576C7 /* StatisticsViewController.swift in Sources */,
+				6B65316F2C86304A007C5631 /* EmailTextField.swift in Sources */,
+				6B65316D2C8626AC007C5631 /* PriceTextField.swift in Sources */,
 				6BC823342C7F3F0800DE4584 /* NewProjectViewModel.swift in Sources */,
 				6B2B70512C7DF5FB007576C7 /* SecondSplashViewController.swift in Sources */,
 				6BEFC8D42C7EB1290007B7EC /* TasksViewController.swift in Sources */,
 				6BAB222E2C7E2AD800EE021D /* UserDefaultKeys.swift in Sources */,
+				6B6531662C85E159007C5631 /* ValidationTextField.swift in Sources */,
 				6B2B70562C7E0CA7007576C7 /* SplashPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

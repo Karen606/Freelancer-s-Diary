@@ -36,27 +36,38 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-sz-UcX" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-45-8g0">
                                 <rect key="frame" x="20" y="88" width="240" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8k-sz-UcX" customClass="PriceTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Tmy-iU-Rd4"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Tmy-iU-Rd4"/>
+                                    <constraint firstItem="e8k-sz-UcX" firstAttribute="leading" secondItem="vdD-45-8g0" secondAttribute="leading" id="3kJ-rq-V98"/>
+                                    <constraint firstItem="e8k-sz-UcX" firstAttribute="top" secondItem="vdD-45-8g0" secondAttribute="top" id="7b3-1U-m23"/>
+                                    <constraint firstAttribute="trailing" secondItem="e8k-sz-UcX" secondAttribute="trailing" id="Au2-Jb-IER"/>
+                                    <constraint firstAttribute="height" constant="40" id="uxA-zz-E3N"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="ButtonColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vdD-45-8g0" secondAttribute="trailing" constant="20" symbolic="YES" id="0ev-m3-haH"/>
                             <constraint firstItem="nzC-CF-zq7" firstAttribute="top" secondItem="t66-lR-OIL" secondAttribute="bottom" constant="11.666666666666671" id="7f4-Fa-8cV"/>
-                            <constraint firstItem="e8k-sz-UcX" firstAttribute="top" secondItem="nzC-CF-zq7" secondAttribute="bottom" constant="10" id="BKB-Tn-qlk"/>
                             <constraint firstAttribute="trailing" secondItem="nzC-CF-zq7" secondAttribute="trailing" constant="20" symbolic="YES" id="BaN-yL-iGa"/>
-                            <constraint firstItem="e8k-sz-UcX" firstAttribute="leading" secondItem="cQ8-48-DjA" secondAttribute="leading" constant="20" symbolic="YES" id="aFw-RC-opb"/>
+                            <constraint firstAttribute="bottom" secondItem="vdD-45-8g0" secondAttribute="bottom" constant="20" symbolic="YES" id="WNv-Xg-dyx"/>
+                            <constraint firstItem="vdD-45-8g0" firstAttribute="leading" secondItem="cQ8-48-DjA" secondAttribute="leading" constant="20" id="au3-QT-9VQ"/>
                             <constraint firstItem="t66-lR-OIL" firstAttribute="top" secondItem="cQ8-48-DjA" secondAttribute="top" constant="7" id="bMF-Nn-rLg"/>
                             <constraint firstItem="t66-lR-OIL" firstAttribute="leading" secondItem="cQ8-48-DjA" secondAttribute="leading" constant="16" id="fVB-IO-NRR"/>
-                            <constraint firstAttribute="trailing" secondItem="e8k-sz-UcX" secondAttribute="trailing" constant="20" symbolic="YES" id="gXa-9X-vwm"/>
                             <constraint firstItem="nzC-CF-zq7" firstAttribute="leading" secondItem="cQ8-48-DjA" secondAttribute="leading" constant="20" symbolic="YES" id="hSi-3k-P0d"/>
-                            <constraint firstAttribute="bottom" secondItem="e8k-sz-UcX" secondAttribute="bottom" constant="20" symbolic="YES" id="lGI-W2-Kxn"/>
+                            <constraint firstItem="vdD-45-8g0" firstAttribute="top" secondItem="nzC-CF-zq7" secondAttribute="bottom" constant="10" id="m0N-aE-xz2"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -75,7 +86,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="nameTextField" destination="nzC-CF-zq7" id="9Hp-gL-9dZ"/>
-                <outlet property="priceTextField" destination="e8k-sz-UcX" id="2iZ-A8-CTL"/>
+                <outlet property="priceTextField" destination="e8k-sz-UcX" id="PWO-bl-TKt"/>
                 <outlet property="taskNumberLabel" destination="t66-lR-OIL" id="apw-kM-l1T"/>
             </connections>
             <point key="canvasLocation" x="138.93129770992365" y="56.338028169014088"/>

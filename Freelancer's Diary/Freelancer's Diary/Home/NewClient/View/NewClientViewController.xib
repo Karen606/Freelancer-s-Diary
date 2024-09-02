@@ -12,9 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewClientViewController" customModule="Freelancer_s_Diary" customModuleProvider="target">
             <connections>
                 <outlet property="descriptionTextView" destination="lqv-zH-7cL" id="cOF-7Q-7eZ"/>
-                <outlet property="emailTextField" destination="jCG-tm-AYg" id="pAa-UQ-GX8"/>
+                <outlet property="emailTextField" destination="jCG-tm-AYg" id="YXF-DM-jT9"/>
                 <outlet property="nameTextField" destination="XVI-Tj-nLY" id="IaH-SC-Lkp"/>
-                <outlet property="phoneNumberTextField" destination="f8R-MS-87I" id="qau-q2-p0O"/>
+                <outlet property="phoneNumberTextField" destination="f8R-MS-87I" id="pP3-GU-1L5"/>
+                <outlet property="scrollView" destination="lfc-i3-KXN" id="93x-gf-Jgz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yesButton" destination="pkE-SN-xtP" id="dZ9-Ra-gFn"/>
             </connections>
@@ -120,73 +121,95 @@
                                         </button>
                                     </subviews>
                                 </stackView>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+x xxx xxx xx xx" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8R-MS-87I" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
-                                    <rect key="frame" x="35" y="345" width="323" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="JUl-1b-YE2"/>
-                                    </constraints>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="12"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYN-O2-JJP">
                                     <rect key="frame" x="38" y="441" width="48.666666666666657" height="24"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCG-tm-AYg" customClass="CustomTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
-                                    <rect key="frame" x="35" y="473" width="323" height="60"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="60" id="BSj-WW-wtJ"/>
-                                    </constraints>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="12"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A regular customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-IS-uqL">
                                     <rect key="frame" x="38" y="559" width="171.33333333333334" height="24"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3G-ho-BcA">
+                                    <rect key="frame" x="35" y="473" width="323" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCG-tm-AYg" customClass="EmailTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="BSj-WW-wtJ"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jCG-tm-AYg" firstAttribute="leading" secondItem="Q3G-ho-BcA" secondAttribute="leading" id="2IH-IV-1KE"/>
+                                        <constraint firstAttribute="height" constant="60" id="QQm-cB-Tzo"/>
+                                        <constraint firstAttribute="trailing" secondItem="jCG-tm-AYg" secondAttribute="trailing" id="btV-19-guw"/>
+                                        <constraint firstItem="jCG-tm-AYg" firstAttribute="top" secondItem="Q3G-ho-BcA" secondAttribute="top" id="pF5-PH-bzH"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wX8-9i-p0j">
+                                    <rect key="frame" x="35" y="345" width="323" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+x xxx xxx xx xx" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8R-MS-87I" customClass="PhoneNumberTextField" customModule="Freelancer_s_Diary" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="JUl-1b-YE2"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="N5t-mj-yMA"/>
+                                        <constraint firstItem="f8R-MS-87I" firstAttribute="top" secondItem="wX8-9i-p0j" secondAttribute="top" id="Sho-jA-BtP"/>
+                                        <constraint firstItem="f8R-MS-87I" firstAttribute="leading" secondItem="wX8-9i-p0j" secondAttribute="leading" id="do6-6t-Sv9"/>
+                                        <constraint firstAttribute="trailing" secondItem="f8R-MS-87I" secondAttribute="trailing" id="fyx-aw-2EA"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" name="BackgroundColor"/>
                             <constraints>
-                                <constraint firstItem="f8R-MS-87I" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="3D4-O5-U7b"/>
+                                <constraint firstAttribute="trailing" secondItem="Q3G-ho-BcA" secondAttribute="trailing" constant="35" id="1ac-hs-vJY"/>
                                 <constraint firstAttribute="trailing" secondItem="lqv-zH-7cL" secondAttribute="trailing" constant="35" id="3LR-cq-mzl"/>
-                                <constraint firstItem="f8R-MS-87I" firstAttribute="top" secondItem="qzg-7b-mLr" secondAttribute="bottom" constant="8" symbolic="YES" id="3MR-d4-c5z"/>
                                 <constraint firstItem="lqv-zH-7cL" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="3ut-9h-aRk"/>
                                 <constraint firstItem="cV4-IS-uqL" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="38" id="8vy-Qr-x9z"/>
                                 <constraint firstAttribute="trailing" secondItem="XVI-Tj-nLY" secondAttribute="trailing" constant="35" id="CQC-EU-mge"/>
                                 <constraint firstItem="fnV-Ym-DO3" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="Ccf-45-Iea"/>
-                                <constraint firstItem="jCG-tm-AYg" firstAttribute="top" secondItem="sYN-O2-JJP" secondAttribute="bottom" constant="8" symbolic="YES" id="JgK-bk-B8x"/>
+                                <constraint firstItem="wX8-9i-p0j" firstAttribute="top" secondItem="qzg-7b-mLr" secondAttribute="bottom" constant="8" symbolic="YES" id="Fv9-zL-sqQ"/>
                                 <constraint firstItem="irz-dY-t3L" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="38" id="KUO-65-pes"/>
                                 <constraint firstItem="XVI-Tj-nLY" firstAttribute="top" secondItem="Gl2-KR-3m1" secondAttribute="bottom" constant="8" symbolic="YES" id="Kdt-n4-j3I"/>
                                 <constraint firstItem="qzg-7b-mLr" firstAttribute="top" secondItem="lqv-zH-7cL" secondAttribute="bottom" constant="36" id="MN4-vc-lld"/>
+                                <constraint firstAttribute="trailing" secondItem="wX8-9i-p0j" secondAttribute="trailing" constant="35" id="Ome-x5-rlP"/>
                                 <constraint firstItem="fnV-Ym-DO3" firstAttribute="top" secondItem="cV4-IS-uqL" secondAttribute="bottom" constant="8" symbolic="YES" id="Pz9-01-Ndz"/>
                                 <constraint firstItem="lqv-zH-7cL" firstAttribute="top" secondItem="irz-dY-t3L" secondAttribute="bottom" constant="8" symbolic="YES" id="Rqs-ue-31y"/>
-                                <constraint firstAttribute="trailing" secondItem="f8R-MS-87I" secondAttribute="trailing" constant="35" id="YkT-At-hT8"/>
+                                <constraint firstItem="sYN-O2-JJP" firstAttribute="top" secondItem="wX8-9i-p0j" secondAttribute="bottom" constant="36" id="Yh6-J0-1pm"/>
                                 <constraint firstItem="XVI-Tj-nLY" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="Zsa-M4-djv"/>
-                                <constraint firstItem="cV4-IS-uqL" firstAttribute="top" secondItem="jCG-tm-AYg" secondAttribute="bottom" constant="26" id="dgs-aE-0pF"/>
+                                <constraint firstItem="Q3G-ho-BcA" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="f5l-k3-EMd"/>
+                                <constraint firstItem="cV4-IS-uqL" firstAttribute="top" secondItem="Q3G-ho-BcA" secondAttribute="bottom" constant="26" id="fFL-FU-Yna"/>
                                 <constraint firstAttribute="trailing" secondItem="fnV-Ym-DO3" secondAttribute="trailing" constant="35" id="gll-Sh-1zE"/>
                                 <constraint firstItem="sYN-O2-JJP" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="38" id="kW0-GY-kjo"/>
                                 <constraint firstItem="Gl2-KR-3m1" firstAttribute="top" secondItem="QJ0-PL-U5a" secondAttribute="top" constant="17" id="mQb-br-i5R"/>
-                                <constraint firstAttribute="trailing" secondItem="jCG-tm-AYg" secondAttribute="trailing" constant="35" id="nn6-Kn-ja6"/>
                                 <constraint firstAttribute="bottom" secondItem="fnV-Ym-DO3" secondAttribute="bottom" constant="24" id="obn-FX-in9"/>
-                                <constraint firstItem="jCG-tm-AYg" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="pi3-hy-vho"/>
-                                <constraint firstItem="sYN-O2-JJP" firstAttribute="top" secondItem="f8R-MS-87I" secondAttribute="bottom" constant="36" id="qln-lC-4HQ"/>
                                 <constraint firstItem="Gl2-KR-3m1" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="38" id="rYj-R0-v5f"/>
+                                <constraint firstItem="wX8-9i-p0j" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="35" id="seO-t5-3sF"/>
+                                <constraint firstItem="Q3G-ho-BcA" firstAttribute="top" secondItem="sYN-O2-JJP" secondAttribute="bottom" constant="8" symbolic="YES" id="w7j-Yt-eAR"/>
                                 <constraint firstItem="qzg-7b-mLr" firstAttribute="leading" secondItem="QJ0-PL-U5a" secondAttribute="leading" constant="38" id="yWR-mL-zkf"/>
                                 <constraint firstItem="irz-dY-t3L" firstAttribute="top" secondItem="XVI-Tj-nLY" secondAttribute="bottom" constant="36" id="zhj-Yu-R2I"/>
                             </constraints>

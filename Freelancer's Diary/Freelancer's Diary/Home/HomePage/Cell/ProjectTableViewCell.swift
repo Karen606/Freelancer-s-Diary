@@ -25,6 +25,7 @@ class ProjectTableViewCell: UITableViewCell {
     func setupData(model: ProjectModel) {
         projectNameLabel.text = model.project.name
         creatAtLabel.text = model.project.deadline
-        priceLabel.text = "\(model.tasks.reduce(0) { $0 + (Int($1.price) ?? 0) }) $"
+        let price = model.tasks.reduce(0) { $0 + (Double($1.price) ?? 0) }.formatNumber()
+        priceLabel.text = "\(price) $"
     }
 }

@@ -13,8 +13,8 @@ class NewClientViewModel {
     var isFormValid: Bool {
         !newClient.name.isEmpty &&
         !newClient.description.isEmpty &&
-        !newClient.phoneNumber.isEmpty &&
-        !newClient.email.isEmpty &&
+        newClient.phoneNumber.isValidPhoneNumber() &&
+        newClient.email.isValidEmail() &&
         newClient.isRegularCustomer != nil
     }
     

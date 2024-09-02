@@ -38,8 +38,8 @@ class TasksViewController: UIViewController {
         viewModel.$tasks
             .receive(on: DispatchQueue.main)
             .sink { [weak self] tasks in
-                let totalPrice = tasks.reduce(0) { $0 + (Int($1.price) ?? 0) }
-                self?.totalPriceLabel.text = "Total income: \(totalPrice)$"
+                let totalPrice = tasks.reduce(0) { $0 + (Double($1.price) ?? 0) }
+                self?.totalPriceLabel.text = "Total income: \(totalPrice.formatNumber())$"
                 if tasks.count != self?.viewModel.previousTasksCount {
                     self?.updateUI()
                     self?.viewModel.previousTasksCount = tasks.count

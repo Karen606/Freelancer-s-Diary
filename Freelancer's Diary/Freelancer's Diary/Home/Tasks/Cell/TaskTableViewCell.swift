@@ -17,7 +17,7 @@ class TaskTableViewCell: UITableViewCell {
 
     @IBOutlet weak var taskNumberLabel: UILabel!
     @IBOutlet weak var nameTextField: CustomTextField!
-    @IBOutlet weak var priceTextField: CustomTextField!
+    @IBOutlet weak var priceTextField: PriceTextField!
     weak var delegate: TaskTableViewCellDelegate?
     private var index: Int!
     
@@ -48,7 +48,6 @@ class TaskTableViewCell: UITableViewCell {
 
 extension TaskTableViewCell: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-//        delegate?.updateTask(task: TaskModel(name: nameTextField.text ?? "", price: priceTextField.text ?? ""), index: index)
         guard let value = textField.text else { return }
         switch textField {
         case nameTextField:
@@ -74,5 +73,12 @@ extension TaskTableViewCell: UITextFieldDelegate {
                 priceTextField.text?.removeLast()
             }
         }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == priceTextField {
+            return priceTextField.textField(textField, shouldChangeCharactersIn: range, replacementString: string)
+        }
+        return true
     }
 }

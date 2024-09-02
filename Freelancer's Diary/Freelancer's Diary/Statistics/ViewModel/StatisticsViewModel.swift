@@ -34,7 +34,8 @@ class StatisticsViewModel {
     
     
     func getTotalPrice(projects: [ProjectModel]) -> String {
-        return "\(projects.reduce(0) { $0 + (Int($1.getTotalPrice())) })$"
+        let price = projects.reduce(0) { $0 + (Double($1.getTotalPrice())) }.formatNumber()
+        return "\(price) $"
     }
     
     func getTotalCompletedCount(projects: [ProjectModel]) -> String {

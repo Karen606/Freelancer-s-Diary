@@ -10,10 +10,11 @@ import Combine
 
 class NewClientViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nameTextField: CustomTextField!
     @IBOutlet weak var descriptionTextView: UITextView!
-    @IBOutlet weak var phoneNumberTextField: CustomTextField!
-    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var phoneNumberTextField: PhoneNumberTextField!
+    @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var yesButton: UIButton!
     private let viewModel = NewClientViewModel()
     private var cancellables: Set<AnyCancellable> = []
@@ -30,6 +31,7 @@ class NewClientViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar(title: "Select a client", button: nextButton)
+        registerKeyboardNotifications()
         nextButton.addTarget(self, action: #selector(clickedNextButton), for: .touchUpInside)
         nextButton.isEnabled = false
         bindViewModel()
@@ -87,6 +89,24 @@ extension NewClientViewController: UITextFieldDelegate {
             break
         }
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+        case phoneNumberTextField:
+            phoneNumberTextField.isValidPhoneNumber()
+        case emailTextField:
+            emailTextField.isValidEmail()
+        default:
+            break
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == phoneNumberTextField {
+            return phoneNumberTextField.textField(phoneNumberTextField, shouldChangeCharactersIn: range, replacementString: string)
+        }
+        return true
+    }
 }
 
 extension NewClientViewController: UITextViewDelegate {
@@ -98,5 +118,35 @@ extension NewClientViewController: UITextViewDelegate {
 extension NewClientViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         return true
+    }
+}
+
+extension NewClientViewController {
+    
+    func registerKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(NewClientViewController.keyboardNotification(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    @objc func keyboardNotification(notification: NSNotification) {
+        
+        if let userInfo = notification.userInfo {
+            let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let duration: TimeInterval = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
+            let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
+            if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
+                scrollView.contentInset = .zero
+            } else {
+                let height: CGFloat = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)!.size.height
+                scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: height, right: 0)
+            }
+            
+            UIView.animate(withDuration: duration,
+                           delay: TimeInterval(0),
+                           options: animationCurve,
+                           animations: { self.view.layoutIfNeeded() },
+                           completion: nil)
+        }
     }
 }

@@ -42,7 +42,8 @@ class TaskListViewModel {
     func updateTaskPrice(_ price: String, at index: Int) {
         guard index < tasks.count else { return }
         currentTaskIndex = index
-        tasks[index].price = price
+        let cleanedPrice = price.components(separatedBy: .whitespaces).joined()
+        tasks[index].price = cleanedPrice
     }
     
     func updateTask(at index: Int, with task: TaskModel) {

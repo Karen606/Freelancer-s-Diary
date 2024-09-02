@@ -18,8 +18,8 @@ struct ProjectModel: Codable, Equatable {
         return lhs.id == rhs.id
     }
     
-    func getTotalPrice() -> Int {
-        return tasks.reduce(0) { $0 + (Int($1.price) ?? 0) }
+    func getTotalPrice() -> Double {
+        return tasks.reduce(0) { $0 + (Double($1.price) ?? 0) }
     }
 }
 

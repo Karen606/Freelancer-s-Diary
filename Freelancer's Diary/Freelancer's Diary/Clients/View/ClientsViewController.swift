@@ -20,6 +20,10 @@ class ClientsViewController: UIViewController {
         bindViewModel()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.loadClientsFromUserDefaults()
+    }
 
     func setupTableView() {
         clientsTableView.delegate = self
@@ -65,7 +69,10 @@ extension ClientsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let clientVC = ClientViewController(nibName: "ClientViewController", bundle: nil)
+        clientVC.client = viewModel.clients[indexPath.section]
+        self.navigationController?.pushViewController(clientVC, animated: true)
+
     }
 }
 

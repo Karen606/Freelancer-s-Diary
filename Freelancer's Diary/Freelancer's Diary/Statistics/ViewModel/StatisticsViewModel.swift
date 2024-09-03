@@ -13,25 +13,20 @@ class StatisticsViewModel {
     @Published var totalClients: String = "0"
     
     init() {
-        loadProjectsFromUserDefaults()
-        loadClientsFromUserDefaults()
+        loadData()
     }
     
-    func loadProjectsFromUserDefaults() {
+    func loadData() {
         if let data = UserDefaults.standard.data(forKey: .projects),
            let decodedProjects = try? JSONDecoder().decode([ProjectModel].self, from: data) {
             totalpPrice = getTotalPrice(projects: decodedProjects)
             totalCompleted = getTotalCompletedCount(projects: decodedProjects)
         }
-    }
-    
-    func loadClientsFromUserDefaults() {
         if let data = UserDefaults.standard.data(forKey: .clients),
            let decodedClients = try? JSONDecoder().decode([ClientModel].self, from: data) {
             totalClients = "\(decodedClients.count)"
         }
     }
-    
     
     func getTotalPrice(projects: [ProjectModel]) -> String {
         let price = projects.reduce(0) { $0 + (Double($1.getTotalPrice())) }.formatNumber()

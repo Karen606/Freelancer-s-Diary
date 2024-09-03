@@ -20,10 +20,14 @@ class StatisticsViewController: UIViewController {
         setNavigationBar(title: "Statistics", button: nil)
         bindPrice()
         bindCompleted()
-        bindCompleted()
+        bindClients()
         totalPriceLabel.text = viewModel.totalpPrice
         completedNumberLabel.text = viewModel.totalCompleted
         clientsNumberLabel.text = viewModel.totalClients
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.loadData()
     }
     
     private func bindPrice() {

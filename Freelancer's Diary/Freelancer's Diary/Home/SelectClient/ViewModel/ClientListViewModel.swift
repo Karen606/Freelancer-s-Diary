@@ -26,15 +26,4 @@ class ClientListViewModel {
                UserDefaults.standard.set(encodedClients, forKey: .clients)
            }
        }
-
-       func addProject(_ client: ClientModel) {
-           clients.append(client)
-           saveProjectsToUserDefaults()
-       }
-
-       func updateProject(at index: Int, with client: ClientModel) {
-           guard index < clients.count else { return }
-           clients[index] = client
-           saveProjectsToUserDefaults()
-       }
 }

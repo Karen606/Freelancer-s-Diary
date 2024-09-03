@@ -62,6 +62,9 @@
 		6BC823312C7F381900DE4584 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823302C7F381900DE4584 /* ProjectViewModel.swift */; };
 		6BC823342C7F3F0800DE4584 /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */; };
 		6BC823362C7F46CD00DE4584 /* NewClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC823352C7F46CD00DE4584 /* NewClientViewModel.swift */; };
+		6BD43A902C87C27100E8B3EF /* TaskNamePriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD43A8F2C87C27100E8B3EF /* TaskNamePriceView.swift */; };
+		6BD43A942C87C3AB00E8B3EF /* ClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD43A932C87C3AB00E8B3EF /* ClientViewController.xib */; };
+		6BD43A952C87C3AB00E8B3EF /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD43A922C87C3AB00E8B3EF /* ClientViewController.swift */; };
 		6BE2791E2C7E9F50006D1638 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */; };
 		6BEFC8D42C7EB1290007B7EC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFC8D22C7EB1290007B7EC /* TasksViewController.swift */; };
 		6BEFC8D52C7EB1290007B7EC /* TasksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BEFC8D32C7EB1290007B7EC /* TasksViewController.xib */; };
@@ -128,6 +131,9 @@
 		6BC823302C7F381900DE4584 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
 		6BC823352C7F46CD00DE4584 /* NewClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewModel.swift; sourceTree = "<group>"; };
+		6BD43A8F2C87C27100E8B3EF /* TaskNamePriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNamePriceView.swift; sourceTree = "<group>"; };
+		6BD43A922C87C3AB00E8B3EF /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
+		6BD43A932C87C3AB00E8B3EF /* ClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientViewController.xib; sourceTree = "<group>"; };
 		6BE2791D2C7E9F50006D1638 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		6BEFC8D22C7EB1290007B7EC /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		6BEFC8D32C7EB1290007B7EC /* TasksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksViewController.xib; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 		6B2B70682C7E0F02007576C7 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				6BD43A912C87C39500E8B3EF /* Client */,
 				6B9B69A82C7FCA4D0011DB10 /* View */,
 			);
 			path = Clients;
@@ -381,6 +388,7 @@
 		6B9B69B52C7FE8FA0011DB10 /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				6BD43A8E2C87C26300E8B3EF /* TaskVew */,
 				6B67BEBD2C8008780099456D /* Dialog */,
 				6B9B69B62C7FE9060011DB10 /* View */,
 			);
@@ -491,6 +499,23 @@
 				6BC823332C7F3F0800DE4584 /* NewProjectViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BD43A8E2C87C26300E8B3EF /* TaskVew */ = {
+			isa = PBXGroup;
+			children = (
+				6BD43A8F2C87C27100E8B3EF /* TaskNamePriceView.swift */,
+			);
+			path = TaskVew;
+			sourceTree = "<group>";
+		};
+		6BD43A912C87C39500E8B3EF /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				6BD43A922C87C3AB00E8B3EF /* ClientViewController.swift */,
+				6BD43A932C87C3AB00E8B3EF /* ClientViewController.xib */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 		6BEFC8D02C7EB1080007B7EC /* Tasks */ = {
@@ -613,6 +638,7 @@
 				6B67BEBF2C8008950099456D /* RemoveConfirmationDialog.xib in Resources */,
 				6B2B70792C7E0FC9007576C7 /* Settings.storyboard in Resources */,
 				6BAB22322C7E328500EE021D /* ProjectTableViewCell.xib in Resources */,
+				6BD43A942C87C3AB00E8B3EF /* ClientViewController.xib in Resources */,
 				6BEFC8E02C7EB7310007B7EC /* TaskTableViewCell.xib in Resources */,
 				6B2B70152C7DC466007576C7 /* Base in Resources */,
 				6B5A05722C7F1FCA00D15E9F /* ClientTableViewCell.xib in Resources */,
@@ -637,6 +663,7 @@
 				6BEFC8DB2C7EB4DA0007B7EC /* TaskListViewModel.swift in Sources */,
 				6BC823312C7F381900DE4584 /* ProjectViewModel.swift in Sources */,
 				6B6531682C85EE78007C5631 /* Validations.swift in Sources */,
+				6BD43A902C87C27100E8B3EF /* TaskNamePriceView.swift in Sources */,
 				6B2B704E2C7DF170007576C7 /* SplashViewController.swift in Sources */,
 				6BC823362C7F46CD00DE4584 /* NewClientViewModel.swift in Sources */,
 				6B2B70702C7E0F25007576C7 /* SettingsViewController.swift in Sources */,
@@ -656,6 +683,7 @@
 				6B67BEC12C8008B00099456D /* RemoveConfirmationDialog.swift in Sources */,
 				6B2B700B2C7DC465007576C7 /* SceneDelegate.swift in Sources */,
 				6BEFC8DF2C7EB7310007B7EC /* TaskTableViewCell.swift in Sources */,
+				6BD43A952C87C3AB00E8B3EF /* ClientViewController.swift in Sources */,
 				6B65316A2C862685007C5631 /* PhoneNumberTextField.swift in Sources */,
 				6B67BEBC2C80056C0099456D /* EdgeLabel.swift in Sources */,
 				6BAB22392C7E3CD000EE021D /* NewProjectViewController.swift in Sources */,

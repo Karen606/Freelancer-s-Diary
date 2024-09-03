@@ -9,12 +9,14 @@ import UIKit
 
 protocol RemoveConfirmationDialogDelegate: AnyObject {
     func removeProject()
+    func completeProject()
 }
 
 class RemoveConfirmationDialog: UIView {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     weak var delegate: RemoveConfirmationDialogDelegate?
+    private var isRemove = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,8 +26,10 @@ class RemoveConfirmationDialog: UIView {
         super.init(coder: aDecoder)
     }
 
-    func commonInit(projectName: String?) {
-        self.descriptionLabel.text = "Are you sure you want to remove? “\(projectName ?? "")”"
+    func commonInit(projectName: String?, isRemove: Bool = true) {
+        self.isRemove = isRemove
+        let descrition = isRemove ? "Are you sure you want to remove" : "Are you sure you want to complete?"
+        self.descriptionLabel.text = "\(descrition) “\(projectName ?? "")”"
         self.backgroundColor = .systemBackground.withAlphaComponent(0.4)
         self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.33).cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -38,7 +42,11 @@ class RemoveConfirmationDialog: UIView {
     }
     
     @IBAction func clickedYes(_ sender: UIButton) {
-        delegate?.removeProject()
+        if isRemove {
+            delegate?.removeProject()
+        } else {
+            delegate?.completeProject()
+        }
         self.removeFromSuperview()
     }
     

@@ -56,6 +56,15 @@ class ProjectViewModel {
         }
     }
     
+    func completedProject(with project: ProjectModel) {
+        if let index = projects.firstIndex(where: { $0 == project }) {
+            projects[index].status = .completed
+            if let encodedProjects = try? JSONEncoder().encode(projects) {
+                UserDefaults.standard.set(encodedProjects, forKey: .projects)
+            }
+        }
+    }
+    
     func clear() {
         project = nil
         tasks = nil

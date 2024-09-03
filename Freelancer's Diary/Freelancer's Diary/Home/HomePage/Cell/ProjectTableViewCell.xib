@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,12 +28,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvX-HF-Xca">
-                                <rect key="frame" x="14" y="33.333333333333336" width="200" height="21.666666666666664"/>
+                                <rect key="frame" x="13.999999999999998" y="33.333333333333336" width="4.6666666666666661" height="21.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hg-yv-0yv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hg-yv-0yv">
                                 <rect key="frame" x="222" y="36.666666666666664" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,7 +46,6 @@
                             <constraint firstItem="Flr-DK-CBO" firstAttribute="leading" secondItem="hIu-LJ-icT" secondAttribute="leading" constant="14" id="FxL-zW-wbS"/>
                             <constraint firstItem="3Hg-yv-0yv" firstAttribute="leading" secondItem="Flr-DK-CBO" secondAttribute="trailing" constant="8" symbolic="YES" id="GqL-8T-aul"/>
                             <constraint firstItem="3Hg-yv-0yv" firstAttribute="centerY" secondItem="hIu-LJ-icT" secondAttribute="centerY" id="LMa-mg-dal"/>
-                            <constraint firstItem="3Hg-yv-0yv" firstAttribute="leading" secondItem="LvX-HF-Xca" secondAttribute="trailing" constant="8" symbolic="YES" id="YC7-27-O2R"/>
                             <constraint firstItem="LvX-HF-Xca" firstAttribute="top" secondItem="Flr-DK-CBO" secondAttribute="bottom" constant="6" id="aGM-dm-ipt"/>
                             <constraint firstItem="LvX-HF-Xca" firstAttribute="leading" secondItem="hIu-LJ-icT" secondAttribute="leading" constant="14" id="fYg-xW-dfX"/>
                             <constraint firstAttribute="bottom" secondItem="LvX-HF-Xca" secondAttribute="bottom" constant="18" id="xZh-4U-xBY"/>
